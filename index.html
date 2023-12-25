@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8a41a145c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="searchBox">
+            <input type="text" id="search" placeholder="Enter City Name">
+            <button class="btn"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #7da5e9"></i></button>
+        </div>
+        <div class="main">
+            <div class="currentWeather">
+                <div class="currentStatus">
+                    <div class="image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="temperature">
+                        <div class="temp_c"></div>
+                        <div class="condition"></div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="cityName"></div>
+                    <div class="region"></div>
+                    <div class="localTime"></div>
+                </div>
+            </div>
+            <div class="extra">
+                <div class="extraWeatherDetailCurrent">
+                    <div class="blocks">
+                        <img src="./Images/sunIcon.svg" alt="">
+                        <p class="contentText">UV</p>
+                        <p class="uv val"></p>
+                    </div>
+                    <div class="blocks">
+                        <i class="fa-solid fa-temperature-three-quarters" style="color: #f5f9ff;"></i>
+                        <p class="contentText">Feels Like</p>
+                        <p class="temp_feels val"></p>
+                    </div>
+                    <div class="blocks">
+                        <i class="fa-solid fa-droplet" style="color: #f5f9ff;"></i>
+                        <p class="contentText">Humidity</p>
+                        <p class="humidity val"></p>
+                    </div>
+                    <div class="blocks">
+                        <i class="fa-solid fa-wind" style="color: #f5f9ff;"></i>
+                        <p class="contentText winddir">NNW Wind</p>
+                        <p class="wind val"></p>
+                    </div>
+                    <div class="blocks">
+                        <img src="./Images/airPressure.svg" alt="">
+                        <p class="contentText">Air Pressure</p>
+                        <p class="airPressure val"></p>
+                    </div>
+                    <div class="blocks">
+                        <i class="fa-solid fa-eye" style="color: #f5f9ff;"></i>
+                        <p class="contentText">Visibility</p>
+                        <p class="visibility val"></p>
+                    </div>
+                </div>
+                <div class="forecast"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
